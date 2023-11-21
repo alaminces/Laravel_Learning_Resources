@@ -9,15 +9,18 @@ Request & Respons এর মাঝে যখন কোনো ঘটনা ঘট
 যেমন Restriction Purpose, Monitoring Purpose, Debugging Purpose etc.
 Log Report দেখে আমরা Decision নিতে পারি আমাদের Application এর কোন কোন জায়গায় ইরর হইছে।
 
+Log এর বিল্ট ইন ফিচার ব্যবহার করার ফলে তার বিস্তারিত সব কিছু storage/log/laravel.log তে পাওয়া যায়।
+
 => Log এর বিল্ট-ইন ফিচার সমূহ :
-Log::info(); 
-Log::emergency()
-Log::alert()
-Log::critical()
-Log::error()
-Log::warning()
-Log::notice()
-Log::debug()
+
+Log::emergency($message);
+Log::alert($message);
+Log::critical($message);
+Log::error($message);
+Log::warning($message);
+Log::notice($message);
+Log::info($message);
+Log::debug($message);
 
 */
 
